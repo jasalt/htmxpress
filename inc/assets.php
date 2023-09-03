@@ -8,7 +8,8 @@ function bootstrap() {
 
 function register() {
 	// CDN use for prototyping only
-	wp_enqueue_script( 'htmx', 'https://unpkg.com/htmx.org@1.9.3' );
+	// wp_enqueue_script( 'htmx', 'https://unpkg.com/htmx.org@1.9.4' );
+	wp_enqueue_script( 'htmx', plugins_url( 'htmx.org@1.9.4', __FILE__ ) );
 
 	add_post_nonce();
 }
